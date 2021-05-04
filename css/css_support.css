@@ -79,7 +79,7 @@ html {
     margin-top: calc(40vh + 33px)
   }
 }
-@media screen and (max-width: 395px){
+@media screen and (max-width: 425px){
   .flex-item-on, .flex-item-under{
     height: 50vh;
     max-height: 300px;
