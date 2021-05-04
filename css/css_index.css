@@ -1,0 +1,231 @@
+  html {
+	margin: 0;
+	padding: 0;
+    width: 100%;
+    height: 100%;
+ }
+
+.body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    display: table;
+    background-color: #24252A;
+    font-size: 1.5vw;
+	color: white;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+ }
+
+ /* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #24252A; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #18191C;
+    border-radius: 5px; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #131416; 
+  }
+
+
+ a:link { 
+ text-decoration:none; 
+ } 
+
+ #center-txt {
+     text-align: center;
+ }
+
+ #paddingCenter {
+     padding-left: 50%;
+     padding-right: 50%;
+ }
+
+ p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: max(1vw,7px);
+    color: grey;
+}
+
+ .top-title {
+     margin-top: 10vh;
+     font-size: 1px;
+ }
+
+ .top-title h1 {
+     font-size: max(2.5vw,20px);
+ }
+
+ .circle-icon{
+    height: auto;
+    z-index: 1;
+    width: 17vw;
+    min-width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    animation: breath 3s cubic-bezier(0.33, 1, 0.68, 1) 0s infinite alternate;
+ }
+
+/*animation: name duration timing-function delay iteration-count direction fill-mode;*/
+
+ @keyframes breath {
+    from {
+        transform: translateY(20px);
+    }
+    to {
+        transform: translateY(-30px);
+    }
+
+}
+
+.oval{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+
+.oval div{
+    position: relative;
+    opacity: .6;
+    margin: 0 auto;
+    background-color: #18191C;
+    width: 21vw;
+    height: 3vw;
+    border-radius: 22vw / 3vw;
+    min-width: 130px;
+    min-height: 40px;
+    animation: ombre 3s cubic-bezier(0.33, 1, 0.68, 1) 0s infinite alternate;
+  }
+  
+  .oval :nth-child(1){
+    filter: blur(20px);
+  }
+  
+  @keyframes ombre {
+    from {
+        transform: scale(.2);
+    }
+    to {
+        transform: scale(.9);
+    }
+  }
+
+
+ .btn-groupe {
+     margin: 100px auto;
+ }
+
+ 
+.div-but-add {
+    display: flex;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40vw; 
+    height: 5vw;
+    min-width: 200px;
+    min-height: 30px;
+    background: #0B5ED7;
+    border-radius: 5px;
+    transition: all .5s ;
+}
+
+
+.div-but-add p {
+    font-size: max(1vw, 10px);
+}
+
+
+.div-but-add:hover {
+    transform: scale(1.1);
+}
+
+.discord-icon{
+    width: 4vw;
+    min-width: 20px;
+    height: auto;
+
+}
+
+.div-but-find {
+    display: flex;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40vw; 
+    height: 5vw;
+    min-width: 200px;
+    min-height: 30px;
+    background: #000000;
+    border-radius: 5px;
+    transition: all .5s ;
+}
+
+.div-but-find p {
+    font-size: max(1vw, 10px);
+}
+
+.div-but-find:hover {
+    transform: scale(1.1);
+}
+
+.find-icon{
+    width: 3vw;
+    min-width: 20px;
+    height: auto;  
+}
+
+.inline-btn {
+    text-decoration: none;
+    margin: auto;
+    color: #fff;
+}
+
+.footer{
+    display: table-row;
+    width: 100%;
+    height: 7vw;
+    background-color: #303236;
+    bottom: 0;
+    color: grey;
+    text-align: center;
+}
+
+.footer p {
+    vertical-align: middle;
+    display: table-cell;
+    font-size: 1.2vw;
+}           
+
+.copyright {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#footerLink1 {
+   padding-left: 30px;
+   padding-right: 5px;
+   color: grey;
+}
+
+#footerLink {
+    text-align: center;
+    color: grey;
+}
+
+
+
