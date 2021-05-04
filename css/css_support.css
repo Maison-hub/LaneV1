@@ -18,6 +18,27 @@ html {
     font-family: 'Roboto', sans-serif;
  }
 
+ /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #24252A; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #18191C;
+  border-radius: 5px; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #131416; 
+}
+
  a:link { 
   text-decoration:none; 
   }
@@ -45,6 +66,7 @@ html {
   background-color: #2F3136;
   flex: 100%;
   height: 30vh;
+  min-height: none;
   box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.15);
@@ -54,17 +76,17 @@ html {
 @media screen and (max-width: 395px){
   .flex-item-on, .flex-item-under{
     height: 50vh;
+    max-height: 300px;
   }
   .flex-container{
     margin-top: calc(50vh + 33px)
   }
 }
 
-
-
 .flex-item-on div {
-  margin: auto;
-  font-size: max(2vw, 20px)
+  margin: auto ;
+  font-size: max(2vw, 20px);
+  padding: 10px;
 }
 
 .flex-item-on p {
@@ -79,11 +101,16 @@ html {
   display: flex;
   width: 30vw;
   height: 5vw;
-  min-width: 150px;
-  min-height: 40px;
+  min-width: 200px;
+  min-height: 55px;
   background-color: #0B5ED7;
   border-radius: 5px;
   transition: all .5s ;
+}
+@media screen and (max-width: 395px){
+  .btn-sup-serv{
+    margin: 0px auto auto auto;
+  }
 }
 
 .btn-sup-serv p {
@@ -111,21 +138,21 @@ html {
 
 #container{
   width: 30vw;
-     height: 5vw;
-     min-width: 150px;
-     min-height: 40px; 
+  height: 5vw;
+  min-width: 200px;
+  min-height: 55px; 
   margin:auto;
  }
 
  .btn-copy {
      position: absolute;
      z-index: 2;
-     margin: auto;
+     margin: 0;
      display: flex;
      width: 30vw;
      height: 5vw;
-     min-width: 150px;
-     min-height: 40px;
+     min-width: 200px;
+      min-height: 55px;
      background-color:#24252A;
      color: grey;
      border-radius: 5px;
@@ -133,8 +160,14 @@ html {
      transition: all .7s;
   }
 
+  @media screen and (max-width: 395px){
+    #container{
+      margin: 0px auto auto auto;
+    }
+  }
+
   .btn-copy p {
-    font-size: 1.5vw;
+    font-size: 60%;
     margin: auto;
     text-decoration: none;
    color: white;

@@ -13,10 +13,31 @@ html {
     display: table;
     background-color: #24252A;
     font-size: 1.5vw;
-	color: white;
+	  color: white;
     scroll-behavior: smooth;
     font-family: 'Roboto', sans-serif;
  }
+
+ /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #24252A; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #18191C;
+  border-radius: 5px; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #131416; 
+}
 
  a:link{
   color: white;
