@@ -66,13 +66,19 @@ html {
   background-color: #2F3136;
   flex: 100%;
   height: 30vh;
-  min-height: none;
   box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.15);
   text-align: center;
 }
-
+@media screen and (max-width: 635px) {
+  .flex-item-on, .flex-item-under{
+    height: 40vh;
+  }
+  .flex-container{
+    margin-top: calc(40vh + 33px)
+  }
+}
 @media screen and (max-width: 395px){
   .flex-item-on, .flex-item-under{
     height: 50vh;
@@ -86,7 +92,7 @@ html {
 .flex-item-on div {
   margin: auto ;
   font-size: max(2vw, 20px);
-  padding: 10px;
+  padding: 15px;
 }
 
 .flex-item-on p {
@@ -129,11 +135,14 @@ html {
   font-size: max(2vw, 20px)
 }
 
+.flex-item-under div:first-child{
+  padding: 15px;
+}
+
 .p-explain-under{
   margin: auto;
   font-size: max(1vw, 10px);
-  color: gray
-  
+  color: gray;
 }
 
 #container{
@@ -172,8 +181,6 @@ html {
     text-decoration: none;
    color: white;
   }
-
-
   
   .btn-copy:hover{
     transform: scale(1.05);
