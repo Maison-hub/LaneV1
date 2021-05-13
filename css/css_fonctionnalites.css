@@ -139,7 +139,7 @@ html {
   .table-content{
     color:grey;
     text-align: center;
-    padding: 30px;
+    padding: 20px;
     border-bottom: gray;
   }
   
@@ -178,8 +178,29 @@ html {
         }
     }
 
+th{
+  font-size: 3vw;
+}
+
  td{
    font-size: 1.5vw;
+ }
+
+ .long-text{
+   font-size: 1.5vw ;
+ }
+
+ @media screen and (max-width: 700px){
+   .table-content{
+     padding: 5px;
+   }
+   td{
+     font-size: 8px;
+   }
+   
+   .long-text{
+     font-size: 6px;
+   }
  }
 
 
