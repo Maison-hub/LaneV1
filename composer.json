@@ -1,0 +1,11 @@
+{
+    "name": "maison-hub/lane-v1",
+    "description": "WebSite Lanev1",
+    "authors": [
+        {
+            "name": "Gregoire Parant",
+            "email": "g.parant@thecodingmachine.com"
+        }
+    ],
+    "require": {}
+}
