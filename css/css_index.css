@@ -138,7 +138,7 @@
     height: 5vw;
     min-width: 300px;
     min-height: 40px;
-    background: #0B5ED7;
+    background: #5865F2;
     border-radius: 5px;
     transition: all .5s ;
 }
@@ -154,10 +154,10 @@
 }
 
 .discord-icon{
-    width: 4vw;
-    min-width: 20px;
+    width: 5vw;
+    min-width: 30px;
     height: auto;
-
+    padding-right: 2vw;
 }
 
 .div-but-find {
@@ -183,9 +183,10 @@
 }
 
 .find-icon{
-    width: 3vw;
-    min-width: 20px;
-    height: auto;  
+    width: 5vw;
+    min-width: 30px;
+    height: auto; 
+    padding-right: 2vw; 
 }
 
 .inline-btn {

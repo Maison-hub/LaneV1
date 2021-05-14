@@ -10,7 +10,7 @@ const textCopy = "Houmous.Entertaiment@gmail.com"
 btnCopy.addEventListener("click", () =>{
   navigator.clipboard.writeText(textCopy)
   btnInfo.textContent = "Copié !";
-  btnInfo.style.color = "#43B581";
+  btnInfo.style.color = "#57F287";
 })
 /*changement au click + reset*/
 let canReset = false;
