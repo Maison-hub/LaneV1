@@ -141,6 +141,7 @@
     background: #404EED;
     border-radius: 5px;
     transition: all .5s ;
+    cursor: not-allowed;
 }
 
 
