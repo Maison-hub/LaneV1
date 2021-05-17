@@ -119,12 +119,12 @@ html {
   
   .caption{
     text-align: center;
-    font-size: 30px;
+    font-size: 4vw;
+    font-family: 'Open Sans', sans-serif;
     color: cornsilk;
     padding-bottom: 30px;
-    text-decoration: underline grey 2px;
   }
-  
+
   .table-border {
     border-bottom-width: 2px;
     border-bottom-color: #34373C;
@@ -133,7 +133,19 @@ html {
   .table-content-title{
     color: cornsilk;
     text-align: center;
+    font-size: 1.5vw;
     padding: 30px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  
+  @media screen and (max-width: 700px){
+    .caption {
+      font-size: 7vw;
+    }
+    .table-content-title{
+      font-size: 10px;
+    }
   }
   
   .table-content{

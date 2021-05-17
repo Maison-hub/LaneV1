@@ -41,7 +41,8 @@
 
  a:link { 
  text-decoration:none; 
- } 
+ }
+
 
  #center-txt {
      text-align: center;
@@ -123,6 +124,12 @@
     }
   }
 
+  .disable-info{
+      color: #ED4245;
+      text-align: center;
+      font-size: max(1vw, 10px);
+      margin-top: 5px;
+  }
 
  .btn-groupe {
      margin: 100px auto;
@@ -138,7 +145,7 @@
     height: 5vw;
     min-width: 300px;
     min-height: 40px;
-    background: #404EED;
+    background: #bdbcbc;  /*404EED;*/
     border-radius: 5px;
     transition: all .5s ;
     cursor: not-allowed;
@@ -146,13 +153,14 @@
 
 
 .div-but-add p {
-    font-size: max(1vw, 10px);
+    font-size: max(1.5vw, 10px);
+    text-decoration: none;
 }
 
 
-.div-but-add:hover {
+/* .div-but-add:hover {
     transform: scale(1.1);
-}
+} */
 
 .discord-icon{
     width: 5vw;
@@ -176,7 +184,7 @@
 }
 
 .div-but-find p {
-    font-size: max(1vw, 10px);
+    font-size: max(1.5vw, 10px);
 }
 
 .div-but-find:hover {
