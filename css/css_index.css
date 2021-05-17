@@ -61,12 +61,17 @@
 
  .top-title {
      margin-top: 10vh;
-     font-size: 1px;
+     padding-left: 15px;
+     padding-right: 15px;
  }
 
  .top-title h1 {
      font-size: max(2.5vw,20px);
  }
+
+ .top-title P {
+    font-size: max(1vw,10px);
+}
 
  .circle-icon{
     height: auto;
