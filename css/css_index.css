@@ -63,6 +63,7 @@
      margin-top: 10vh;
      padding-left: 15px;
      padding-right: 15px;
+     padding-bottom: 20px;
  }
 
  .top-title h1 {
@@ -219,11 +220,13 @@
 }
 
 .but-a{
-    width: 40vw; 
-    height: 5vw;
     margin-top: 40px;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    width: 40vw; 
+    height: 5vw;
+    min-width: 300px;
+    min-height: 40px;
 }
 
 .footer{
