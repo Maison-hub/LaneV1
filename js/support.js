@@ -6,7 +6,7 @@ container.appendChild(btnInfo);
 btnInfo.className = "copy-info";
 /*detection du click*/
 let btnCopy = document.getElementById("copy");
-const textCopy = "Houmous.Entertaiment@gmail.com"
+const textCopy = "houmous.entertaiment@gmail.com"
 btnCopy.addEventListener("click", () =>{
   navigator.clipboard.writeText(textCopy)
   btnInfo.textContent = "Copié !";
