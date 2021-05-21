@@ -13,21 +13,14 @@ const command = [
 const searchNav = document.getElementById('searchNav');
 const searchBar = document.getElementById('search-bar')
 
-function suggest(item){
-    let suggestion = document.createElement('div');
-btnInfo.textContent = item ;
-container.appendChild(suggestion);
-btnInfo.className = "suggest";
-}
-
 searchNav.addEventListener('keyup', () => {
     let input = searchNav.value
     let result = command.filter(item => item.name.toLocaleLowerCase().includes(input.toLocaleLowerCase()));
     let suggestion = ''
     if (input!=''){
     result.forEach(resultItem => 
-        suggestion += `<a class = "suggest" href ="#${resultItem.id}"> ${resultItem.name}</a>`)
+        suggestion += `<a class = "suggest" href ="#${resultItem.id}"> ${resultItem.name}<p>${resultItem.description}</p></a>`)
     }
 
-    document.getElementById('suggest').innerHTML = suggestion
+    document.getElementById('suggest-div').innerHTML = suggestion
 })

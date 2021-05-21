@@ -46,15 +46,70 @@ html {
  .search-bar{
    margin-top: 5vh;
    margin-left: 20px;
+   transition: all .5s;
  }
+
+ .search-bar :focus{
+  outline: none ;
+}
 
  .search-input{
    width: 35vw;
-   padding: 1vw 2vw;
+   padding: .5vw 1vw;
+   margin-bottom: -1px;
    border: 2px solid black;
-   border-radius: 2px; 
+   border-radius: 4px; 
    background-color: #232327;
+   color: white;
+   font-size: 1.5vw;
  }
+
+ #suggest-div{
+   width: 35vw;
+ }
+
+ .suggest{
+     display: flex;
+     flex-direction: column;
+     background-color: #232327;
+     padding: 5px;
+     border: solid 1px black;
+     margin: 0px;
+     font-size: 1.2vw;
+     transition: all .5s;
+     color: white;
+    text-decoration: none;
+ }
+
+ .suggest p {
+   color: gray;
+   display: flex;
+   justify-content: left;
+   font-size: 1vw;
+   box-sizing: border-box;
+   margin-bottom: 0;
+   text-overflow: ellipsis;
+ } 
+
+ @media screen and (max-width: 700px){
+   .search-input{
+     width: 80vw;
+     height: 6vh;
+     font-size: 15px;
+   }
+   .search-bar{
+    margin-left: calc(50% - 80vw/2);
+   }
+   #suggest-div{
+     width: 80vw;
+   }
+   .suggest{
+     font-size: 12px;
+   }
+   .suggest p {
+     font-size: 10px;
+   }
+  }
 
  .nav-table{
     position: sticky;
@@ -191,7 +246,8 @@ html {
 
     @media screen and (max-width: 700px){
         table{
-            font-size: 2vw;
+          width: 100%;
+          font-size: 2vw;
         }
 
         .first-table {
