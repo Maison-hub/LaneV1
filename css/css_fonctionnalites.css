@@ -38,7 +38,7 @@ html {
   background: #131416; 
 }
 
- a:link{
+ a { 
   color: white;
   text-decoration: none;
  }
@@ -58,7 +58,7 @@ html {
    padding: .5vw 1vw;
    margin-bottom: -1px;
    border: 2px solid black;
-   border-radius: 4px; 
+   border-radius: 6px; 
    background-color: #232327;
    color: white;
    font-size: 1.5vw;
@@ -71,14 +71,19 @@ html {
  .suggest{
      display: flex;
      flex-direction: column;
-     background-color: #232327;
+     background-color: #24252A;
      padding: 5px;
-     border: solid 1px black;
-     margin: 0px;
+     border-bottom: solid 1px black;
+     margin: 0;
      font-size: 1.2vw;
      transition: all .5s;
      color: white;
     text-decoration: none;
+ }
+
+ .suggest:hover{
+   background-color: #181a1b;
+   color: white;
  }
 
  .suggest p {
@@ -222,9 +227,6 @@ html {
     padding: 20px;
     border-bottom: gray;
   }
-  
-  
-  
   table{
       margin-bottom: 100px;
       border-collapse: collapse;
