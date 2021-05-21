@@ -43,6 +43,19 @@ html {
   text-decoration: none;
  }
 
+ .search-bar{
+   margin-top: 5vh;
+   margin-left: 20px;
+ }
+
+ .search-input{
+   width: 35vw;
+   padding: 1vw 2vw;
+   border: 2px solid black;
+   border-radius: 2px; 
+   background-color: #232327;
+ }
+
  .nav-table{
     position: sticky;
     top: 70px;
@@ -110,7 +123,7 @@ html {
 
 
   .first-table{
-    margin-top: -45vh;
+    margin-top: -55vh;
   }
   
   caption {
