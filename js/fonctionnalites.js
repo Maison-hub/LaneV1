@@ -26,9 +26,7 @@ searchNav.addEventListener('keyup', () => {
     let suggestion = ''
     if (input!=''){
     result.forEach(resultItem => 
-        suggestion += `<a href ="#${resultItem.id}">
-        <div class = "suggest" > ${resultItem.name}</divv>
-        </a>`)
+        suggestion += `<a class = "suggest" href ="#${resultItem.id}"> ${resultItem.name}</a>`)
     }
 
     document.getElementById('suggest').innerHTML = suggestion
