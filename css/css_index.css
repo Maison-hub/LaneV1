@@ -142,6 +142,13 @@
         margin-left: calc(50% - 25vw / 2 );
     }
   }
+  @media screen and (max-width: 400px){
+    .oval {
+        width: 25vw;
+        height: 3vw;
+        margin-left: calc(50% - 25vw / 2 );
+    }
+  }
 
  .btn-groupe {
      margin: 150px auto 100px auto;

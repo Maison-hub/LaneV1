@@ -31,7 +31,7 @@
                         <a class="nav-link active" aria-current="page" href="./fonctionnalites.html">Fonctionalitées</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://web-lane.herokuapp.com/support.html">Support</a>
+                        <a class="nav-link" href="./support.html">Support</a>
                     </li>
                 </ul>
             </div>
@@ -41,6 +41,12 @@
             <a href="#commandes-pratiques" class="a-nav-table">Commandes Pratiques</a>
             <a href="#commandes-moderations">Commandes De Modérations</a>
             <a href="#commande-fun">Commandes Fun</a>
+        </div>
+        
+        <!--search bar-->
+        <div class="search-bar">
+            <input class ="search-input" id ="searchNav" type="text" placeholder="Rechercher un commande ...">
+            <div id="suggest"></div>
         </div>
 
          <!--tableau 1-->
@@ -52,27 +58,27 @@
                 <th class = "table-content-title" >Syntaxe</th>
             </tr>
             <tr class = "table-border">
-                <td class = "table-content">Team</td>
+                <td class = "table-content" id = "team">Team</td>
                 <td class = "table-content long-text"> Permet de créer deux équipes équilibrées à partir des noms des joueurs. Cependant, le nombre de joueur doit être pair.</td>
                 <td class = "table-content">*team "joueur1,joueur2,joueur3,joueur4,..."</td>
             </tr>
             <tr class = "table-border">
-                <td class = "table-content">Poll</td>
+                <td class = "table-content" id = "poll">Poll</td>
                 <td class = "table-content long-text">Permet de générer un sondage fermé ou ouvert</td>
                 <td class = "table-content">*poll "question fermé" <br> *poll "question ouverte" "choix1,choix2,choix3 ..."</td>
             </tr>
             <tr class = "table-border">
-                <td class = "table-content">Random</td>
+                <td class = "table-content" id = "Random">Random</td>
                 <td class = "table-content long-text">Renvoie un nombre aléatoire entre deux borne définit par l'utilisateur</td>
                 <td class = "table-content">*random nombre1 nombre2</td>
             </tr>
             <tr class = "table-border">
-                <td class = "table-content">Command</td>
+                <td class = "table-content" id = "command">Command</td>
                 <td class = "table-content">Envoie un lien vers cette page.</td>
                 <td class = "table-content">*command</td>
             </tr>
             <tr class = "table-border">
-                <td class = "table-content">Site</td>
+                <td class = "table-content" id = "site">Site</td>
                 <td class = "table-content">Envoi un lien vers notre site.</td>
                 <td class = "table-content">*site</td>
             </tr>
@@ -87,7 +93,7 @@
                 <th class = "table-content-title" >Syntaxe</th>
             </tr>
             <tr class = "table-border">
-                <td class = "table-content">Clear</td>
+                <td class = "table-content" id = "clear">Clear</td>
                 <td class = "table-content">Permet d'effacer un nombre precis de messages dans le salon textuel</td>
                 <td class = "table-content">*clear [nombres de messages a supprimer]</td>
             </tr>
@@ -114,10 +120,10 @@
                     |
                 <a id = "footerLink" href="./fonctionnalites.html">Fonctionalités</a>
                     |
-                <a id = "footerLink" href="https://web-lane.herokuapp.com/support.htmls">Support</a> 
+                <a id = "footerLink" href="./support.html">Support</a> 
             </p>
         </footer>
-
+        <script src = "./js/fonctionnalites.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     </body>
 </html>
