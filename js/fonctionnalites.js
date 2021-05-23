@@ -4,10 +4,15 @@ const command = [
     {name: "Poll", id:"poll", description:"Permet de générer un sondage fermé ou ouvert"},
     {name: "Random", id:"random", description:"Renvoie un nombre aléatoire entre deux borne définit par l'utilisateur"},
     {name: "Command	", id:"command", description:"Envoie un lien vers cette page."},
-    {name: "Site",id:"site", description:"Envoi un lien vers notre site"},
+    {name: "Site", id:"site", description:"Envoi un lien vers notre site"},
 
     //Commandes De Modérations
-    {name: "Clear",id:"clear", description:"Permet d'effacer un nombre precis de messages dans le salon textuel"}
+    {name: "Clear", id:"clear", description:"Permet d'effacer un nombre precis de messages dans le salon textuel"},
+    
+    //Commandes Fun
+    {name: "Pile ou Face", id:"pileface", description: "Lance un jeu de pile ou face contre le bot" },
+    {name: "Juste Prix", id: "justeprix", description: "Lance le célèbre jeux du juste prix"},
+    {name: "Gif", id:"gif", description:"Le bot envoie un gif aléatoire dans le salon textuel"}
 ];
 
 const searchNav = document.getElementById('searchNav');

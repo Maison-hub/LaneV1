@@ -43,10 +43,19 @@ html {
   text-decoration: none;
  }
 
+ .navbar{
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: onLoad 0.5s 1s ease-out forwards;
+}
+
  .search-bar{
    margin-top: 5vh;
    margin-left: 20px;
    transition: all .5s;
+   opacity: 0;
+   transform: translateX(-5vw);
+   animation: onLoad .5s .5s ease-out forwards;
  }
 
  .search-bar :focus{
@@ -118,6 +127,7 @@ html {
 
  .nav-table{
     position: sticky;
+    z-index: 1;
     top: 70px;
     margin-top: calc(50vh - 124px);
     width: 25vw;
@@ -146,6 +156,22 @@ html {
     color: cornsilk;
     background-color:#18191C;
     cursor: pointer;
+  }
+
+  .nav-table :nth-child(1){
+    opacity: 0;
+   transform: translatey(-15px);
+   animation: onLoad .5s 1s ease-out forwards;
+  }
+  .nav-table :nth-child(2){
+    opacity: 0;
+   transform: translatey(-15px);
+   animation: onLoad .5s 1.5s ease-out forwards;
+  }
+  .nav-table :nth-child(3){
+    opacity: 0;
+   transform: translatey(-15px);
+   animation: onLoad .5s 2s ease-out forwards;
   }
 
  @media screen and (max-width: 700px){
@@ -233,6 +259,9 @@ html {
       margin-right: auto;
       transition: all .5s;
       font-size: 1.5vw;
+      opacity: 0;
+      transform: translateX(5vw);
+      animation: onLoad 1s 0s ease-out forwards;
     }
     
   
@@ -297,6 +326,12 @@ th{
     text-align: center;
 }
 
+@media screen and (max-width: 700px){
+  .footer{
+    bottom: calc(7vh * 3);
+  }
+}
+
 .footer p {
     vertical-align: middle;
     display: table-cell;
@@ -317,4 +352,11 @@ th{
 #footerLink {
     text-align: center;
     color: grey;
+}
+
+@keyframes onLoad {
+  100%{
+      opacity: 1;
+      transform: none;
+  }
 }

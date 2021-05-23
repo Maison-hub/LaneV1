@@ -59,6 +59,12 @@
     color: grey;
 }
 
+.navbar{
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: onLoad 0.5s 1s ease-out forwards;
+}
+
  .top-title {
      margin-top: 10vh;
      padding-left: 15px;
@@ -68,10 +74,22 @@
 
  .top-title h1 {
      font-size: max(2.5vw,20px);
+     opacity: 0;
+     transform: translateY(-30px);
+     animation: onLoad 0.5s .2s ease-out forwards;
  }
 
  .top-title P {
-    font-size: max(1vw,10px);
+    font-size: max(1vw,10px);opacity: 0;
+    display: inline-block;
+    transform: translateY(-30px);
+    animation: onLoad 0.5s .5s ease-out forwards;
+}
+
+.movement{
+    opacity: 0;
+    animation: onLoad 0.5s 1s ease-out forwards;
+
 }
 
 .circle-icon-a{
@@ -102,7 +120,7 @@
         transform: translateY(20px);
     }
     to {
-        transform: translateY(-20px);
+        transform: translateY(-40px);
     }
 
 }
@@ -270,6 +288,13 @@
 #footerLink {
     text-align: center;
     color: grey;
+}
+
+@keyframes onLoad {
+    100%{
+        opacity: 1;
+        transform: none;
+    }
 }
 
 
