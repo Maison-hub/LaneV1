@@ -45,7 +45,7 @@ html {
   .navbar{
     opacity: 0;
     transform: translateY(-30px);
-    animation: onLoad 0.5s 1s ease-out forwards;
+    animation: onLoad 0.5s 2s ease-out forwards;
 }
 
  .support-title{
@@ -58,6 +58,8 @@ html {
 
  .flex-container {
   position: relative;
+  width: 100%;
+  overflow: hidden ;
   margin-top: 40vh;
   transform: translateY(-50%);
   display: flex;

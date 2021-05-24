@@ -158,52 +158,89 @@ html {
     cursor: pointer;
   }
 
-  .nav-table :nth-child(1){
-    opacity: 0;
-   transform: translatey(-15px);
-   animation: onLoad .5s 1s ease-out forwards;
-  }
   .nav-table :nth-child(2){
+    display: flex;
     opacity: 0;
    transform: translatey(-15px);
-   animation: onLoad .5s 1.5s ease-out forwards;
+   animation: onLoad .5s .6s ease-out forwards;
   }
   .nav-table :nth-child(3){
     opacity: 0;
    transform: translatey(-15px);
-   animation: onLoad .5s 2s ease-out forwards;
+   animation: onLoad .5s .8s ease-out forwards;
   }
+  .nav-table :nth-child(4){
+    opacity: 0;
+   transform: translatey(-15px);
+   animation: onLoad .5s 1s ease-out forwards;
+  }
+  .nav-table :nth-child(5){
+    opacity: 0;
+   transform: translatey(-15px);
+   animation: onLoad .5s 1.2s ease-out forwards;
+  }
+
+ @media  screen and (min-width: 700px) {
+   .nav-table :nth-child(1){
+     display: none;
+   }
+ }
 
  @media screen and (max-width: 700px){
     .nav-table{
      position: fixed;
      display: flex;
      width: 100%;
-     height: 21vh;
+     height: 30vh;
      flex-direction: column;
-     justify-content: center;
+     justify-content: flex-end;
      align-items: center;
      top: unset;
      bottom: 0;
-    }
-
+    }  
     .nav-table a {
         margin: 0px;
         border-radius: 5px;
         font-size:calc(2vw + 1vh);
     }
-
-    .third-table{
-        padding-bottom: 25vh ;
-    }
-
-    #nav-item1{
-        border-top-right-radius: unset;
+    .nav-table a:nth-child(1){
+      margin-left: calc(100% - 60px + 1vw);
+      margin-bottom: 1vw;
+      animation: none;
+      width: 50px;
+      height: 50px;
+      border-radius: 30%;
+      box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.15);
+      -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.15);
+      -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.15);
+   }
+    .nav-table :nth-child(2){
+        display: none;
      }
-
-     #nav-item3{
-        border-bottom-right-radius: unset;
+     .nav-table :nth-child(3){
+      border-bottom: unset;
+      border-bottom-left-radius: unset;
+      border-bottom-right-radius: unset;
+      animation: none;
+      opacity: 1;
+      transform: none;
+   }
+     .nav-table :nth-child(4){
         border-bottom: unset;
+        border-top-left-radius: unset;
+       border-top-right-radius: unset;
+       border-bottom-left-radius: unset;
+      border-bottom-right-radius: unset;
+        animation: none;
+        opacity: 1;
+        transform: none;
+     }
+     .nav-table :nth-child(5){
+      border-top-left-radius: unset;
+      border-top-right-radius: unset;
+      animation: none;
+      opacity: 1;
+      transform: none;
      }
   }
 
