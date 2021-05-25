@@ -8,6 +8,8 @@ const command = [
 
     //Commandes De Modérations
     {name: "Clear", id:"clear", description:"Permet d'effacer un nombre precis de messages dans le salon textuel"},
+    {name:"Kick", id:"kick", description:"Permet de kick une personne en ajoutant une raison"},
+    {name:"Ban", id:"ban", description:"Permet de ban une personne en ajoutant une raison"},
     
     //Commandes Fun
     {name: "Pile ou Face", id:"pileface", description: "Lance un jeu de pile ou face contre le bot" },

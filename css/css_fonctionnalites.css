@@ -43,6 +43,11 @@ html {
   text-decoration: none;
  }
 
+ i{
+  font-size: 1,5vw;
+  color: rgb(160, 160, 160);
+ }
+
  .navbar{
   opacity: 0;
   transform: translateY(-30px);
@@ -283,6 +288,9 @@ html {
       font-size: 10px;
     }
   }
+  i{
+    font-size: 10px ;
+  }
   
   .table-content{
     color:grey;
@@ -317,7 +325,9 @@ html {
           width: 100%;
           font-size: 2vw;
         }
-
+        i{
+          font-size: 2vw;
+        }
         .first-table {
             margin-top: 5px;
         }  
@@ -344,6 +354,9 @@ th{
      padding: 5px;
    }
    td{
+     font-size: 8px;
+   }
+   i{
      font-size: 8px;
    }
    

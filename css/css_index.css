@@ -104,8 +104,8 @@
  .circle-icon{
     height: auto;
     z-index: 1;
-    width: 17vw;
-    min-width: 150px;
+    width: 15vw;
+    min-width: 120px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -120,12 +120,10 @@
         transform: translateY(20px);
     }
     to {
-        transform: translateY(-40px);
+        transform: translateY(-20px);
     }
 
 }
-
-
 
 .oval {
     position: absolute;
@@ -175,17 +173,22 @@
  
 .div-but-add {
     display: flex;
-    margin-top: 40px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
     width: 40vw; 
     height: 5vw;
     min-width: 300px;
     min-height: 40px;
-    background: #bdbcbc;;  /*404EED;*/
+    background: #2A5EE8;
     border-radius: 5px;
     transition: all .5s ;
-    cursor: not-allowed;
+}
+
+@media screen and (max-width: 600px){
+    .div-but-add{
+        margin-top: -50px;
+    }
 }
 
 
@@ -195,22 +198,16 @@
 }
 
 
-/* .div-but-add:hover {
-    transform: scale(1.1);
-} */
+.div-but-add:hover {
+    transform: scale(1.05);
+    background: #346afd;
+} 
 
 .discord-icon{
     width: 5vw;
     min-width: 30px;
     height: auto;
     padding-right: 2vw;
-}
-
-.dsble{
-    color: #ED4245;
-    text-align: center;
-    font-size: max(1vw, 10px);
-    margin-top: 5px;
 }
 
 .div-but-find {
@@ -232,7 +229,8 @@
 }
 
 .div-but-find:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
+    background: #171718;
 }
 
 .find-icon{
