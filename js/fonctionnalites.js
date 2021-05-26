@@ -4,6 +4,7 @@ const command = [
     {name: "Poll", id:"poll", description:"Permet de générer un sondage fermé ou ouvert"},
     {name: "Random", id:"random", description:"Renvoie un nombre aléatoire entre deux borne définit par l'utilisateur"},
     {name: "Command	", id:"command", description:"Envoie un lien vers cette page."},
+    {name: "Site", id: "site", description: "Envoie un lien vers notre site"},
     {name: "Help", id:"help", description:"Affiche toutes les commandes disponnibles"},
 
     //Commandes De Modérations

@@ -90,7 +90,6 @@
 .movement{
     opacity: 0;
     animation: onLoad 0.5s 1s ease-out forwards;
-
 }
 
 .circle-icon-a{
@@ -113,8 +112,6 @@
     margin-top: 6vh;
     animation: breath 3s cubic-bezier(0.33, 1, 0.68, 1) 0s infinite alternate;
  }
-
-/*animation: name duration timing-function delay iteration-count direction fill-mode;*/
 
  @keyframes breath {
     from {
@@ -184,6 +181,8 @@
     background: #2A5EE8;
     border-radius: 5px;
     transition: all .5s;
+    opacity: 0;
+    animation: onLoadBtn 1.5s 1s ease-out forwards;
 }
 
 @media screen and (max-width: 600px){
@@ -223,6 +222,8 @@
     background: #000000;
     border-radius: 5px;
     transition: all .5s ;
+    opacity: 0;
+    animation: onLoadBtn 1.5s 1s ease-out forwards;
 }
 
 .div-but-find p {
@@ -293,6 +294,12 @@
     100%{
         opacity: 1;
         transform: none;
+    }
+}
+
+@keyframes onLoadBtn {
+    100%{
+        opacity: 1;
     }
 }
 
