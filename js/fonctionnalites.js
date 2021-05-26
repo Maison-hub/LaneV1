@@ -10,6 +10,8 @@ const command = [
     {name: "Clear", id:"clear", description:"Permet d'effacer un nombre precis de messages dans le salon textuel"},
     {name:"Kick", id:"kick", description:"Permet de kick une personne en ajoutant une raison"},
     {name:"Ban", id:"ban", description:"Permet de ban une personne en ajoutant une raison"},
+    {name:"Mute", id:"mute", description:"Mute la personne de votre choix"},
+    {name:"Demute", id:"demute", description:"Demute la personne de votre choix"},
     
     //Commandes Fun
     {name: "Pile ou Face", id:"pileface", description: "Lance un jeu de pile ou face contre le bot" },
