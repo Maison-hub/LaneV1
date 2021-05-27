@@ -200,7 +200,7 @@ html {
      width: 30vw;
      height: 5vw;
      min-width: 200px;
-      min-height: 55px;
+     min-height: 55px;
      background-color:#24252A;
      color: grey;
      border-radius: 5px;
@@ -209,10 +209,10 @@ html {
   }
 
   .btn-copy p {
-    -moz-user-select: all;
-  -webkit-user-select: all;
-  -ms-user-select: all;
-  user-select: all;
+   -moz-user-select: text;
+   -webkit-user-select: text;
+   -ms-user-select: text;
+   user-select: text;
   }
 
   @media screen and (max-width: 395px){
