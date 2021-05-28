@@ -11,6 +11,7 @@ btnCopy.addEventListener("click", () =>{
   navigator.clipboard.writeText(textCopy)
   btnInfo.textContent = "Copié !";
   btnInfo.style.color = "#57F287";
+  console.log(textCopy);
 })
 /*changement au click + reset*/
 let canReset = false;
